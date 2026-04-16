@@ -17,8 +17,7 @@ Complete Explanation on How to set-up Laravel from Zero: https://youtu.be/16yFTp
 From the link on santrikoding.com above (which is spoken in Indonesian Language), here's what you need:<br>
 - Laragon
 - Composer
-- VSCode
-- PHP Extension setup _(after laragon installed)_<br>
+- VSCode<br>
 
 If you don't have Laragon, here's the link to it:<br>
 https://laragon.org/download <br>
@@ -35,18 +34,6 @@ https://getcomposer.org/download/<br>
 *If you don't have VSCode?* Download via this link: https://code.visualstudio.com/download <br>
 Pick a choice to download according to software you're using, _whether its a windows, mac os, or linux_.
 <br><br>
-
-*For the Extension?* Here are the list of PHP Extension given from the tutor: <br>
-_*For those Confused:* This extensions aren't those in VSCode, but from the php.ini laragon, similar to xampp/php/php.ini for the native php version._<br>
-- extension=bcmath
-- extension=ctype
-- extension=json
-- extension=mbstring
-- extension=openssl
-- extension=pdo_mysql
-- extension=tokenizer
-- extension=xml<br>
-For Laragon, go to _C:\laragon\bin\php\php-XXversionXX\php.ini_, to enable those extensions.  Make sure to double check using CTRL + F, and search the points given above one-by-one to makesure the extensions are included.  If haven't included, copy & paste into the php.ini above the other 'extension=' line that exists.  If already included, just simple erase the ';' to enable the php extension.<br><br>
 
 ## For the full Tutorial
 
