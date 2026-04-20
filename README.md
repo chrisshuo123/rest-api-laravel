@@ -80,14 +80,14 @@ On Laragon, click 'Database', which will automatically opens the HeidiSQL, and d
 
 ###### Configure the .env to connect with the DB
 Go to the .env, and make some changes here:<br>
-'''#DB_CONNECTION=sqlite
+```#DB_CONNECTION=sqlite
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=db_api_laravel
 DB_USERNAME=root
 DB_PASSWORD=
-'''
+```
 First, laravel's DB_CONNECTION is sqlite by default, so give comment using hash '#' and create DB_CONNECTION to mysql. For the DB_PASSWORD, Leave the password empty by default.
 
 ###### Create the Model & Migration
