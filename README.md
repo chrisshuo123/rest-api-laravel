@@ -2,7 +2,7 @@
 This repository purpose is to re-train my REST-API ability via Laravel, using Laravel version 11.  As a reference, I learn on how to manage REST API via 'Santri Coding', an Indonesian Developer that teaches us on how to code via Laravel, PHP, JavaScript, and any other stacks. <br><br>
 
 You can find his link right here, he offer lots of tutorials whether its free or the payed version:<br>
-https://santrikoding.com/
+[Santri Koding Website](https://santrikoding.com/)
 
 For the tutorials I've enrolled in Santri Coding, here's the link to the complete text-based tutorials:<br>
 https://santrikoding.com/cara-membuat-rest-api-laravel-installasi<br><br>
@@ -53,7 +53,7 @@ For Laragon, go to _C:\laragon\bin\php\php-XXversionXX\php.ini_, to enable those
 ### SantriKoding Laravel #1 - Preparation and How to Install: 
 Text-based Tutorial Link: https://santrikoding.com/cara-membuat-rest-api-laravel-installasi <br>
 Video-based Tutorial Link: https://www.youtube.com/watch?v=yYKGkmaPyG0&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=3<br>
-*Please be advice:* This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
+**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
 
 *Branch: 'part1_modelAndMigration'*<br><br>
 
@@ -80,13 +80,14 @@ On Laragon, click 'Database', which will automatically opens the HeidiSQL, and d
 
 ###### Configure the .env to connect with the DB
 Go to the .env, and make some changes here:<br>
-#DB_CONNECTION=sqlite<br>
-DB_CONNECTION=mysql<br>
-DB_HOST=127.0.0.1<br>
-DB_PORT=3306<br>
-DB_DATABASE=db_api_laravel<br>
-DB_USERNAME=root<br>
-DB_PASSWORD=<br>
+'''#DB_CONNECTION=sqlite
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_api_laravel
+DB_USERNAME=root
+DB_PASSWORD=
+'''
 First, laravel's DB_CONNECTION is sqlite by default, so give comment using hash '#' and create DB_CONNECTION to mysql. For the DB_PASSWORD, Leave the password empty by default.
 
 ###### Create the Model & Migration
