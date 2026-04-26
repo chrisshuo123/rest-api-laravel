@@ -51,8 +51,8 @@ For Laragon, go to _C:\laragon\bin\php\php-XXversionXX\php.ini_, to enable those
 ## For the full Tutorial
 
 ### SantriKoding Laravel #1 - How to Install and Run Laravel 11: 
-Text-based Tutorial Link: [How to make REST API Laravel & Installation _(Cara membuat REST API Laravel Installasi)_](https://santrikoding.com/tutorial-restful-api-laravel-11-1-cara-install-menjalankan-laravel-11) <br>
-Video-based Tutorial Link: [RESTFUL API 11 Tutorial _(Tutorial Restful API Laravel11)_](https://www.youtube.com/watch?v=5CqaQTeSHTw&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=2)<br>
+Text-based Tutorial Link: [Tutorial Restful API Laravel 11 #1: How to make REST API Laravel & Installation _(Tutorial Restful API Laravel 11 #1: Cara Install & Menjalankan Laravel 11)_](https://santrikoding.com/tutorial-restful-api-laravel-11-1-cara-install-menjalankan-laravel-11) <br>
+Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #2: How to Install & Run Laravel 11 _(Tutorial Restful API Laravel 11 #2: Cara Install & Menjalankan Laravel 11)_](https://www.youtube.com/watch?v=5CqaQTeSHTw&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=2)<br>
 **Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
 
 **Branch: 'part1_modelAndMigration'**<br><br>
@@ -78,6 +78,14 @@ On Laragon, click 'Database', which will automatically opens the HeidiSQL, and d
 5. On this new pop-up, right on the left-side of the menu, right-click the 'yourName_db' root > Create New > Database
 6. Name: 'db_api_laravel', Collation: 'utf8mb4_0900_ai_ci' _(leave it default)_.<br><br>
 
+
+### SantriKoding Laravel #2 - Create Model and Migration: 
+Text-based Tutorial Link: [Tutorial RESTFUL API laravel 11 #2: Create Model and Migration _(Tutorial RESTFUL API laravel 11 #2: Membuat Model dan Migration)_](https://santrikoding.com/tutorial-restful-api-laravel-11-2-membuat-model-dan-migration) <br>
+Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #3 : Create Model and Migration _(Tutorial Restful API Laravel 11 #3 : Membuat Model dan Migration)_](https://www.youtube.com/watch?v=yYKGkmaPyG0&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=3)<br>
+**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
+
+**Branch: 'part1_modelAndMigration'**<br><br>
+
 ###### Configure the .env to connect with the DB
 Go to the .env, and make some changes here:<br>
 ```
@@ -101,6 +109,13 @@ On the Post Migration in the up function, add the 'title' with string data type,
 On the vscode terminal, type 'php artisan migrate', and enter, it will generate the new tables contained in the database/migrations directory.<br><br>
 
 You can then go to the HeidiSQL page, click the refresh button on the top-left menu, and you'll notice there's updated new table in the 'yourName_db/db_api_laravel' on the left-side menu bar.<br>
+
+### SantriKoding Laravel #3 - Create API Resources
+Text-based Tutorial Link: [Tutorial Restful API Laravel 11 #3 : Create API Resources _(Tutorial Restful API Laravel 11 #3 : Creating API Resources)_](https://santrikoding.com/tutorial-restful-api-laravel-11-3-membuat-api-resources) <br>
+Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #4 : Create API Resources _(Tutorial Restful API Laravel 11 #4 : Membuat API Resources)_](https://www.youtube.com/watch?v=yYKGkmaPyG0&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=3)<br>
+**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
+
+**Branch: 'part2_createApiRes'**<br><br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
