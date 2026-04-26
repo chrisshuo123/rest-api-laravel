@@ -5,16 +5,16 @@ You can find his link right here, he offer lots of tutorials whether its free or
 [Santri Koding Website](https://santrikoding.com/)
 
 For the tutorials I've enrolled in Santri Coding, here's the link to the complete text-based tutorials:<br>
-[How to create REST API Laravel Installation *(cara membuat rest api laravel installasi)*](https://santrikoding.com/cara-membuat-rest-api-laravel-installasi)<br><br>
+[How to create REST API Laravel Installation *(Tutorial Restful API Laravel 11)*](https://santrikoding.com/tutorial-set/tutorial-restful-api-laravel-11?from=live-search)<br><br>
 
 If you guys are more comfortable with Video learning based _(primarily for begineer programmers)_, then you might access the video REST API Laravel Tutorial:<br>
-[Tutorial Restful API Laravel 11](https://youtu.be/16yFTpW5zaY?si=MiTX4OQDMplqe4dK)
+[Tutorial Restful API Laravel 11](https://youtube.com/playlist?list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&si=HTgyl4iIU37p1Lna)
 
 ## Getting Started
-Complete Explanation on How to set-up Laravel from Zero: [Tutorial Restful API Laravel 11](https://youtu.be/16yFTpW5zaY?si=MiTX4OQDMplqe4dK) <br>
+Complete Explanation on How to set-up Laravel from Zero: [Tutorial Restful API Laravel 11](https://youtube.com/playlist?list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&si=HTgyl4iIU37p1Lna) <br>
 **Note:** Please take note that this uses Indonesian language.  To make it easy, I'll explain in english using simple words and with some tutorials modified by myself, primarily for the Laragon.<br>
 
-From the link on [santrikoding.com](santrikoding.com) above (which is spoken in Indonesian Language), here's what you need:
+From the link on [santrikoding.com](https://santrikoding.com) above (which is spoken in Indonesian Language), here's what you need:
 - Laragon
 - Composer
 - VSCode
@@ -50,9 +50,9 @@ For Laragon, go to _C:\laragon\bin\php\php-XXversionXX\php.ini_, to enable those
 
 ## For the full Tutorial
 
-### SantriKoding Laravel #1 - Preparation and How to Install: 
-Text-based Tutorial Link: [How to make REST API Laravel & Installation _(Cara membuat REST API Laravel Installasi)_](https://santrikoding.com/cara-membuat-rest-api-laravel-installasi) <br>
-Video-based Tutorial Link: [RESTFUL API 11 Tutorial _(Tutorial Restful API Laravel11)_](https://www.youtube.com/watch?v=yYKGkmaPyG0&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=3)<br>
+### SantriKoding Laravel #1 - How to Install and Run Laravel 11: 
+Text-based Tutorial Link: [How to make REST API Laravel & Installation _(Cara membuat REST API Laravel Installasi)_](https://santrikoding.com/tutorial-restful-api-laravel-11-1-cara-install-menjalankan-laravel-11) <br>
+Video-based Tutorial Link: [RESTFUL API 11 Tutorial _(Tutorial Restful API Laravel11)_](https://www.youtube.com/watch?v=5CqaQTeSHTw&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=2)<br>
 **Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
 
 **Branch: 'part1_modelAndMigration'**<br><br>
