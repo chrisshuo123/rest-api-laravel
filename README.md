@@ -128,8 +128,8 @@ Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #4 : Create API Reso
 **Branch: 'part2_createApiRes'**<br><br>
 
 Before I proceed into this Create API Resources course, I first went deep into this Laravel Docs that teaches the importance of using Eloquent Resources, and an overview of its concepts:<br>
-- [Eloquent Resources - Concept Overview](https://laravel.com/docs/11.x/eloquent-resources#concept-overview)
-- [Eloquent Resources](https://laravel.com/docs/11.x/eloquent-resources)<br><br>
+- [Eloquent Resources - Concept Overview](https://laravel.com/docs/11.x/eloquent-resources#concept-overview) *(last read until 'Writing Resources')*
+- [Eloquent Resources](https://laravel.com/docs/11.x/eloquent-resources) *(last read until 'Concept Overview')*<br><br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
