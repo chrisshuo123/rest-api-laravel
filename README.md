@@ -100,13 +100,23 @@ DB_PASSWORD=<br>
 First, laravel's DB_CONNECTION is sqlite by default, so give comment using hash '#' and create DB_CONNECTION to mysql. For the DB_PASSWORD, Leave the password empty by default.
 
 ###### Create the Model & Migration
-In the VSCode terminal, type in 'php artisan make:model Post -m'.  This will automatically create the Post Model _located in app/Models/Post.php_, and XXXXX_create_posts_table.php which is a Post Migration that'll be used to create new table instantly _located in database/migrations/XXXX_create_posts_table.php_.<br><br>
+In the VSCode terminal, type in:
+```
+php artisan make:model Post -m
+```
+This will automatically create the Post Model located in:<br>
+- app/Models/Post.php _which is the model_, and
+- XXXXX_create_posts_table.php *which is a Post Migration that'll be used to create new table instantly located in database/migrations/XXXX_create_posts_table.php.*<br>
 On the Post Model, add protected fillable that contains 2 columns, which are 'title' and 'content' columns.
 <br><br>
 On the Post Migration in the up function, add the 'title' with string data type, and 'content' text data type.  In my own version, I add the 'idPosts' in the id data type, where it's more helpful for intermediate devs like myself.  For begineers, I'll suggest leave the id default (empty).  Because I like to challenge myself, I'll be creating the idPosts primary key, and on the model Post add the "protected $primaryKey = 'idPosts';".
 
 ###### Create the new Table using Migration
-On the vscode terminal, type 'php artisan migrate', and enter, it will generate the new tables contained in the database/migrations directory.<br><br>
+On the vscode terminal, type:
+```
+php artisan migrate
+```<br>
+After that, hit the enter, and it will generate the new tables contained in the database/migrations directory.<br><br>
 
 You can then go to the HeidiSQL page, click the refresh button on the top-left menu, and you'll notice there's updated new table in the 'yourName_db/db_api_laravel' on the left-side menu bar.<br>
 
