@@ -1,11 +1,11 @@
 # Introduction
-This repository purpose is to re-train my REST-API ability via Laravel, using Laravel version 11.  As a reference, I learn on how to manage REST API via 'Santri Coding', an Indonesian Developer that teaches us on how to code via Laravel, PHP, JavaScript, and any other stacks. <br><br>
+This repository purpose is to re-train my REST-API ability via Laravel, using Laravel version 11.  As a reference, I learn on how to manage REST API via 'Santri Coding', an Indonesian Developer that teaches us on how to code via Laravel, PHP, JavaScript, and any other stacks. <br>
 
 You can find his link right here, he offer lots of tutorials whether its free or the payed version:<br>
 [Santri Koding Website](https://santrikoding.com/)
 
 For the tutorials I've enrolled in Santri Coding, here's the link to the complete text-based tutorials:<br>
-[How to create REST API Laravel Installation *(Tutorial Restful API Laravel 11)*](https://santrikoding.com/tutorial-set/tutorial-restful-api-laravel-11?from=live-search)<br><br>
+[How to create REST API Laravel Installation *(Tutorial Restful API Laravel 11)*](https://santrikoding.com/tutorial-set/tutorial-restful-api-laravel-11?from=live-search)<br>
 
 If you guys are more comfortable with Video learning based _(primarily for begineer programmers)_, then you might access the video REST API Laravel Tutorial:<br>
 [Tutorial Restful API Laravel 11](https://youtube.com/playlist?list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&si=HTgyl4iIU37p1Lna)
@@ -30,11 +30,11 @@ If you don't have Composer, here's the link to install:<br>
 **How to download?** There are several ways to download & install composer:<br>
 1. [How to Install Composer on Windows only 1 Minutes](https://www.youtube.com/shorts/wUkeoz28NY8)
 2. [How to Install Composer on Mac only 1 Minutes](https://www.youtube.com/watch?v=_gJ_7Y5THGY)
-<br><br>
+<br>
 
 **If you don't have VSCode?** Download via this link: [visual studio code download](https://code.visualstudio.com/download)<br>
 Pick a choice to download according to software you're using, _whether its a windows, mac os, or linux_.
-<br><br>
+<br>
 
 **For the Extension?** Here are the list of PHP Extension given from the tutor: <br>
 _**For those Confused:** This extensions aren't those in VSCode, but from the php.ini laragon, similar to xampp/php/php.ini for the native php version._<br>
@@ -65,7 +65,6 @@ To create the laravel file _(from my own version)_:
 3. In terminal, type 'composer create-project --prefer-dist laravel/laravel:^11.0 laravel-api'.  This will create a new project named 'laravel-api'.
 4. Continue to type 'cd laravel-api'
 5. And last, type 'php artisan serve', then click on the URL shown in the terminal<br>
-<br>
 If it shows the Laravel web page, you're all set.<br>
 
 ##### Create Database and Migration
@@ -82,9 +81,9 @@ On Laragon, click 'Database', which will automatically opens the HeidiSQL, and d
 ### SantriKoding Laravel #2 - Create Model and Migration: 
 Text-based Tutorial Link: [Tutorial RESTFUL API laravel 11 #2: Create Model and Migration _(Tutorial RESTFUL API laravel 11 #2: Membuat Model dan Migration)_](https://santrikoding.com/tutorial-restful-api-laravel-11-2-membuat-model-dan-migration) <br>
 Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #3 : Create Model and Migration _(Tutorial Restful API Laravel 11 #3 : Membuat Model dan Migration)_](https://www.youtube.com/watch?v=yYKGkmaPyG0&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=3)<br>
-**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
+**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br>
 
-**Branch: 'part1_modelAndMigration'**<br><br>
+**Branch: 'part1_modelAndMigration'**<br>
 
 ###### Configure the .env to connect with the DB
 Go to the .env, and make some changes here:<br>
@@ -115,7 +114,7 @@ On the Post Migration in the up function, add the 'title' with string data type,
 On the vscode terminal, type:
 ```
 php artisan migrate
-```<br>
+```
 After that, hit the enter, and it will generate the new tables contained in the database/migrations directory.<br><br>
 
 You can then go to the HeidiSQL page, click the refresh button on the top-left menu, and you'll notice there's updated new table in the 'yourName_db/db_api_laravel' on the left-side menu bar.<br>
@@ -123,9 +122,13 @@ You can then go to the HeidiSQL page, click the refresh button on the top-left m
 ### SantriKoding Laravel #3 - Create API Resources
 Text-based Tutorial Link: [Tutorial Restful API Laravel 11 #3 : Create API Resources _(Tutorial Restful API Laravel 11 #3 : Creating API Resources)_](https://santrikoding.com/tutorial-restful-api-laravel-11-3-membuat-api-resources) <br>
 Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #4 : Create API Resources _(Tutorial Restful API Laravel 11 #4 : Membuat API Resources)_](https://www.youtube.com/watch?v=yYKGkmaPyG0&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=3)<br>
-**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br><br>
+**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br>
 
-**Branch: 'part2_createApiRes'**<br><br>
+**Branch: 'part2_createApiRes'**<br>
+
+Before I proceed into this Create API Resources course, I first went deep into this Laravel Docs that teaches the importance of using Eloquent Resources, and an overview of its concepts:<br>
+- [Eloquent Resources - Concept Overview](https://laravel.com/docs/11.x/eloquent-resources#concept-overview) *(last read until 'Writing Resources')*
+- [Eloquent Resources](https://laravel.com/docs/11.x/eloquent-resources) *(last read until 'Concept Overview')*<br><br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
