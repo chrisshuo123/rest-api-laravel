@@ -115,7 +115,8 @@ On the Post Migration in the up function, add the 'title' with string data type,
 On the vscode terminal, type:
 ```
 php artisan migrate
-```<br>
+```
+<br>
 After that, hit the enter, and it will generate the new tables contained in the database/migrations directory.<br><br>
 
 You can then go to the HeidiSQL page, click the refresh button on the top-left menu, and you'll notice there's updated new table in the 'yourName_db/db_api_laravel' on the left-side menu bar.<br>
