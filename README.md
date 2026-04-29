@@ -121,6 +121,7 @@ You can then go to the HeidiSQL page, click the refresh button on the top-left m
 
 ### SantriKoding Laravel #3 - Create API Resources
 Text-based Tutorial Link: [Tutorial Restful API Laravel 11 #3 : Create API Resources _(Tutorial Restful API Laravel 11 #3 : Creating API Resources)_](https://santrikoding.com/tutorial-restful-api-laravel-11-3-membuat-api-resources) <br>
+<<<<<<< HEAD
 Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #4 : Create API Resources _(Tutorial Restful API Laravel 11 #4 : Membuat API Resources)_](https://www.youtube.com/watch?v=yYKGkmaPyG0&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=3)<br>
 **Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br>
 
@@ -129,6 +130,146 @@ Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #4 : Create API Reso
 Before I proceed into this Create API Resources course, I first went deep into this Laravel Docs that teaches the importance of using Eloquent Resources, and an overview of its concepts:<br>
 - [Eloquent Resources - Concept Overview](https://laravel.com/docs/11.x/eloquent-resources#concept-overview) *(last read until 'Writing Resources')*
 - [Eloquent Resources](https://laravel.com/docs/11.x/eloquent-resources) *(last read until 'Concept Overview')*<br><br>
+=======
+Video-based Tutorial Link: [Tutorial Restful API Laravel 11 #4 : Create API Resources _(Tutorial Restful API Laravel 11 #4 : Membuat API Resources)_](https://www.youtube.com/watch?v=iWkmzcSI4L8&list=PL-2rLYVN9WCw34_TXFwl84r7DW9vwnj5s&index=4)<br>
+**Please be advice:** This tutorial are spoken in Indonesian language.  For Simplicity, I'll guide you using simple English Language.<br>
+
+**Branch: 'part2_createApiRes'**<br>
+
+In this branch we're only adding the resources directory, with PostResource class in it, and make some modifications on the method by adding a public var declaration and a construct.<br>
+
+Before I proceed into this Create API Resources course, I first went deep into this Laravel Docs that teaches the importance of using Eloquent Resources, and an overview of its concepts:<br>
+- [Eloquent Resources](https://laravel.com/docs/11.x/eloquent-resources)<br>
+
+#### Onto the practice
+Create the resource directory and add class PostResource in the resource using this command in the VSCode Terminal:
+```
+php artisan make:resource PostResource
+```
+This will create a new file & directory in app/Http/Resources/PostResource.php<br>
+
+You will have a new page that looks like this:<br>
+```
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class PostResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        return parent::toArray($request);
+    }
+}
+```
+Modify the PostResource.php by first defining 3 property variables which are $status, $message, $resource, that are essential to be use as an API:
+```
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class PostResource extends JsonResource
+{
+    //define property
+    public $status;
+    public $message;
+    public $resource;
+    ...
+```
+After finish defining the property like above, next is to add construct method:
+```
+<?php
+    ...
+    /**
+     * __construct
+     *
+     * @param  mixed $status
+     * @param  mixed $message
+     * @param  mixed $resource
+     * @return void
+     */
+    public function __construct($status, $message, $resource)
+    {
+        parent::__construct($resource);
+        $this->status  = $status;
+        $this->message = $message;
+    }
+    ...
+```
+And on the toArray default method from laravel resource, change _return parent::toArray($request);_ into this:
+```
+<?php
+    ...
+    public function toArray(Request $request): array {
+        return [
+            'success' => $this->status,
+            'message' => $this->message,
+            'data'    => $this->resource
+        ];
+    }
+```
+#### Final Result
+This will be the result of the app/Http/Resources/PostResource.php:
+```
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class PostResource extends JsonResource
+{
+    // define property
+    public $status;
+    public $message;
+    public $resource;
+    /**
+     * __construct
+     * 
+     * @param mixed $status
+     * @param mixed $message
+     * @param mixed $resource
+     * 
+     * @return void
+     */
+    public function __construct($status, $message, $resource) {
+        parent::__construct($resource);
+        $this->status = $status;
+        $this->message = $message;
+    }
+
+    /**
+     * Transform the resource into an array.
+     * @param mixed $request
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        return [
+            'success'   =>  $this->status,
+            'message'   =>  $this->message,
+            'data'      =>  $this->resource
+        ];
+    }
+}
+
+```
+##### Conclussion
+This branch part2_createApiRes that stands for 'Create API Resource Part 2' only shows on how to create Resource directory in the app/Http/Resources, before moving on to the next branch, that shows how to show data from database into the JSON format on branch part3_dbToJSON.<br><br>
+
+>>>>>>> part2_createApiRes
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
